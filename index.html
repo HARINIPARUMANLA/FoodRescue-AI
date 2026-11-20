@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}FoodRescue AI | Save Food, Share Hope{% endblock %}
+{% block content %}
+<section class="hero">
+  <p class="eyebrow">SMARTER FOOD SHARING, BETTER TOMORROW</p>
+  <h1>Save Food. <span>Share Hope.</span></h1>
+  <p class="lead">A smarter way to connect surplus food with people and communities who need it.</p>
+  <div class="actions"><a class="btn" href="{{ url_for('donate') }}">Donate Food</a><a class="btn btn-light" href="{{ url_for('listings') }}">Find Food</a></div>
+  <div class="food-strip" aria-label="Fresh food">🥬　🥕　🍅　🍞　🍎　🥑　🍊</div>
+</section>
+<section class="section"><div class="section-heading"><p class="eyebrow">HOW IT WORKS</p><h2>Small actions. Meaningful impact.</h2></div>
+<div class="card-grid">
+ <article class="feature"><div class="emoji">🥗</div><h3>Donate Surplus Food</h3><p>Share safe, surplus food and its collection details with people nearby.</p><a href="{{ url_for('donate') }}">Make a donation →</a></article>
+ <article class="feature"><div class="emoji">🤝</div><h3>Find & Request Food</h3><p>Explore available donations and submit a request for the quantity you need.</p><a href="{{ url_for('listings') }}">Explore listings →</a></article>
+ <article class="feature"><div class="emoji">✨</div><h3>Smart Matching</h3><p>Filter donations by food category, quantity and location.</p><a href="{{ url_for('smart_matching') }}">Find a match →</a></article>
+ <article class="feature"><div class="emoji">🤖</div><h3>Ask RescueBot</h3><p>Get help with food rescue questions and information about available donations.</p><a href="{{ url_for('chatbot') }}">Chat with RescueBot →</a></article>
+</div></section>
+<section class="about section"><p class="eyebrow">OUR PURPOSE</p><h2>Rescue food. Nourish communities.</h2><p>FoodRescue AI uses technology to make food sharing easier, more organised and more accessible. The project brings donation listings, recipient requests, smart matching and an AI assistant into one platform.</p></section>
+<section class="founder-section"><p class="eyebrow">THE PERSON BEHIND THE PROJECT</p><h2>Meet the Founder</h2><div class="founder-card"><div class="founder-mark">🌱</div><h3>Parumanla Harini</h3><div class="founder-role">Founder &amp; Developer of FoodRescue AI</div><p>M.Sc. Data Science Student</p><p>My vision is to reduce food wastage through Artificial Intelligence and technology by connecting surplus food with people in need.</p></div></section>
+{% endblock %}

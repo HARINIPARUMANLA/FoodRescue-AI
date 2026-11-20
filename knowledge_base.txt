@@ -1,0 +1,26 @@
+FoodRescue AI Overview
+FoodRescue AI is a food donation and rescue platform that helps connect people and organizations with surplus food donors. Its goal is to reduce avoidable food waste and support communities.
+
+How to Donate Food
+Open the Donate Food page and enter the donor name, food name, category, quantity, unit, preparation time, collection deadline, storage details, location, contact number and optional description. Submit the form to save the donation.
+
+How to Find Food
+Open Find Food to view food donations saved in the application. Check the quantity, location and collection deadline before requesting food.
+
+How to Request Food
+Choose a donation from the Find Food page, open its request form, and enter recipient name, organization, contact number, requested quantity and purpose. The request is submitted for review.
+
+Managing Requests
+The Manage Requests page displays submitted requests. The project administrator can approve or reject a request. The recipient can ask RescueBot about request status by providing the registered 10-digit contact number.
+
+Smart Matching
+Smart Matching filters available donations by food category, required quantity and location. Results are ranked using a simple rule-based score that also considers the collection deadline. It is a prototype matching method, not a trained machine-learning model.
+
+RescueBot
+RescueBot is the FoodRescue AI conversational assistant. It uses a locally running Ollama model (llama3.2:3b) and Retrieval-Augmented Generation (RAG). It retrieves relevant information from this knowledge base and current donation records in SQLite before asking the language model to generate an answer. It does not browse the live internet.
+
+Food Safety Reminder
+Recipients and donors should ensure that donated food is safe, properly stored, clearly labelled, and collected before its stated deadline. Users should not accept food if its safety or storage history is uncertain.
+
+Project Technology
+The prototype uses Python, Flask, SQLite, HTML, CSS, JavaScript, Ollama, Llama 3.2 and a simple keyword-based retrieval approach for RAG.
